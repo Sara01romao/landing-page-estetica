@@ -1,7 +1,12 @@
 
 :root{
-    --color1: #49c0c0;
-    --btn-color:#f55f03;
+    --color1: #f28888;
+    --color2: #078c7f;
+    --bg1:#f2f2f2;
+    --bg2:#f2c8c4;
+    --txt-color1:#fff;
+    --txt-color2: #261a17;
+    
 }
 
 *{
@@ -38,7 +43,7 @@ header{
 }
 
 header h2{
-    color: #fff;
+    color: var(--txt-color1);
     font-size: 3rem;
 }
 
@@ -65,22 +70,39 @@ header h2{
 }
 
 .preco-contain h3:nth-child(3){
-    color: #fff;
+    color: var(--txt-color1);
 }
 
 header a{
-    background: var(--btn-color);
-    width: 150px;
+    background: var(--color2);
+    width: 200px;
     border-radius: 8px;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     align-self: end;
+    font-size: 18px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .preco-contain h3{
     font-size: 3rem;
 }
 
+
+.home{
+    background-image: url('./img/nuvem_rosa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+
+.home h1{
+    font-size: 3.5rem;
+    color: var(--txt-color1) ;
+    text-shadow: 0px 1px 1px #5c5c5c;
+}
