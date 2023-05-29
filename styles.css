@@ -30,6 +30,26 @@ body{
     
 }
 
+.button{
+    background: var(--color2);
+    border-radius: 8px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    align-self: end;
+    font-size: 18px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+
+}
+
+
+
+
+
+
 header{
     background: var(--color1);
 }
@@ -42,9 +62,14 @@ header{
 
 }
 
+header .button{
+    margin: 0 auto;
+}
+
 header h2{
     color: var(--txt-color1);
     font-size: 3rem;
+    text-shadow: 0px 1px 1px #5c5c5c;
 }
 
 .preco-container{
@@ -66,25 +91,18 @@ header h2{
 }
 
 .preco-contain p{
-    color: red;
+    color: #fff;
 }
 
 .preco-contain h3:nth-child(3){
     color: var(--txt-color1);
+    text-shadow: 0px 1px 1px #5c5c5c;
 }
 
 header a{
-    background: var(--color2);
+   
     width: 200px;
-    border-radius: 8px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    align-self: end;
-    font-size: 18px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
 }
 
 .preco-contain h3{
@@ -96,8 +114,8 @@ header a{
     background-image: url('./img/nuvem_rosa.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    padding-top: 50px;
+  
+    padding: 50px 30px 0px;
 }
 
 
@@ -105,4 +123,430 @@ header a{
     font-size: 3.5rem;
     color: var(--txt-color1) ;
     text-shadow: 0px 1px 1px #5c5c5c;
+    
 }
+
+
+.home-info{
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+.home-info div{
+    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.home-info div p{
+    font-size: 22px;
+    
+
+}
+
+.home-info .button{
+    max-width: 450px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+
+.home-info img{
+    max-width: 100%;
+    width: 100%;
+    min-width: 300px;
+    align-self: flex-end;
+}
+
+/*limpeza-pele section*/
+
+.limpeza-pele{
+   padding: 50px 20px;
+   
+}
+
+.limpeza-pele .title{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color2);
+}
+
+.limpeza-pele span{
+    color: #00686f;
+}
+
+.limpeza-pele .subtitle{
+    text-align: center;
+    font-size: 24px;
+    color: var(--color2);
+    max-width: 800px;
+    margin: 20px auto 50px ;
+}
+
+.pele-carousel{
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pele-carousel .slick-slide img{
+    margin: 0 auto;
+}
+
+.pele-carousel .slick-prev, .pele-carousel .slick-next {
+    height: 30px !important;
+    width: 30px;
+    align-self: center;
+    border: none;
+    background: #fff;
+}
+
+.pele-carousel .slick-prev{
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+}
+
+.pele-carousel .slick-next{
+    position: absolute;
+    right: 0px;
+}
+
+.pele-carousel-item{
+    width: 100%;
+}
+
+.pele-carousel-item img{
+    width: 100%;
+}
+
+/*comentarios section*/
+
+
+.comentarios{
+    background: var(--color1);
+    padding: 50px 20px;
+}
+
+.comentarios .title{
+    text-align: center;
+    color: #c1373b;
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comentarios .subtitle{
+    color: #fff;
+    font-size: 22px;
+    max-width: 750px;
+    text-align: center;
+    margin: 20px auto 50px;
+}
+
+.comentarios .comentario-carousel{
+    display: flex;
+    justify-content: center;
+
+}
+
+.comentario-carousel img{
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    
+}
+
+/*etapas*/
+
+.etapas{
+    padding: 50px 30px;
+}
+
+
+.etapas .title{
+    font-size: 2.3rem;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: normal;
+    color: var(--color2);
+    margin-bottom: 50px;
+}
+
+.etapas .title span{
+    color: #00686f;
+}
+
+
+.etapa-item {
+ max-width: 250px;
+ width: 100%;
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ margin: 0 auto;
+
+
+}
+
+.etapa-item h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+
+
+}
+
+
+.etapa-item h3 span{
+   background-color: var(--color2);
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   font-size: 18px;
+}
+
+.etapa-item p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.etapas-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    
+    
+}
+
+.etapas-container-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
+    margin: 0 auto;
+    
+}
+
+.etapas-container img{
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+    border: 2px solid var(--color2);
+    align-self: flex-start;
+}
+
+
+.etapa-item-group{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-self: flex-start;
+}
+
+.etapa-item-group-and{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.etapa-item-group-and .etapa-item{
+    margin: 0;
+}
+
+
+
+/*comentarios section*/
+
+
+.clinica{
+    background: var(--bg2);
+    padding: 50px 20px;
+}
+
+.clinica .title{
+    text-align: center;
+    color: #c1373b;
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+
+
+.clinica-carousel{
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.clinica-carousel .slick-slide img{
+    margin: 0 auto;
+}
+
+.clinica-carousel .slick-prev, .clinica-carousel .slick-next {
+    height: 30px !important;
+    width: 30px;
+    align-self: center;
+    border: none;
+    background: #fff;
+}
+
+.clinica-carousel .slick-prev{
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+}
+
+.clinica-carousel .slick-next{
+    position: absolute;
+    right: 0px;
+}
+
+.clinica-carousel-item{
+    width: 100%;
+}
+
+.clinica-carousel-item img{
+    width: 50%;
+}
+
+/*perguntas section*/
+
+.perguntas{
+    background: var(--color1);
+    padding: 50px;
+}
+
+
+.perguntas h2{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.peguntas-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.accordion {
+    background-color:var(--bg2);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    max-width: 800px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 18px;
+
+    
+  }
+  
+  .active, .accordion:hover {
+    background-color:var(--bg2); 
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  /*cta section*/
+
+  .cta{
+    padding: 50px 30px;
+  }
+
+  .cta .title{
+    font-size: 2.5rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color2);
+
+  }
+
+  .cta .subtitle{
+    margin: 20px 0px 50px;
+    font-size: 22px ;
+    
+  }
+
+  .cta .button{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+
+
+  @media screen and (max-width:500px) {
+    .header-container{
+        flex-wrap: wrap;
+    }
+
+    .home h1{
+        font-size: 2.5rem;
+    }
+
+    .home-info{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .preco-container{
+        justify-content: center;
+    }
+
+    .comentarios .title{
+        font-size: 1.5rem;
+    }
+
+    .etapas-container-group, .etapa-item-group-and{
+        flex-direction: column;
+    }
+
+    .etapa-item-group, .etapa-item-group-and .etapa-item {
+        margin: 0 auto;
+    }
+    
+  }
