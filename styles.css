@@ -164,106 +164,6 @@ header a{
     align-self: flex-end;
 }
 
-/*limpeza-pele section*/
-
-.limpeza-pele{
-   padding: 50px 20px;
-   
-}
-
-.limpeza-pele .title{
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--color2);
-}
-
-.limpeza-pele span{
-    color: #00686f;
-}
-
-.limpeza-pele .subtitle{
-    text-align: center;
-    font-size: 24px;
-    color: var(--color2);
-    max-width: 800px;
-    margin: 20px auto 50px ;
-}
-
-.pele-carousel{
-    max-width:800px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.pele-carousel .slick-slide img{
-    margin: 0 auto;
-}
-
-.pele-carousel .slick-prev, .pele-carousel .slick-next {
-    height: 30px !important;
-    width: 30px;
-    align-self: center;
-    border: none;
-    background: #fff;
-}
-
-.pele-carousel .slick-prev{
-    position: absolute;
-    left: 0px;
-    z-index: 999;
-}
-
-.pele-carousel .slick-next{
-    position: absolute;
-    right: 0px;
-}
-
-.pele-carousel-item{
-    width: 100%;
-}
-
-.pele-carousel-item img{
-    width: 100%;
-}
-
-/*comentarios section*/
-
-
-.comentarios{
-    background: var(--color1);
-    padding: 50px 20px;
-}
-
-.comentarios .title{
-    text-align: center;
-    color: #c1373b;
-    font-size: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.comentarios .subtitle{
-    color: #fff;
-    font-size: 22px;
-    max-width: 750px;
-    text-align: center;
-    margin: 20px auto 50px;
-}
-
-.comentarios .comentario-carousel{
-    display: flex;
-    justify-content: center;
-
-}
-
-.comentario-carousel img{
-    margin: 0 auto;
-    max-width: 700px;
-    width: 100%;
-    
-}
 
 /*etapas*/
 
@@ -374,6 +274,109 @@ header a{
 
 
 
+/*limpeza-pele section*/
+
+.limpeza-pele{
+   padding: 50px 20px;
+   background-color: #f28888;
+   
+}
+
+.limpeza-pele .title{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.limpeza-pele span{
+    color: #af2b2f;
+}
+
+.limpeza-pele .subtitle{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    max-width: 800px;
+    margin: 20px auto 50px ;
+}
+
+.pele-carousel{
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pele-carousel .slick-slide img{
+    margin: 0 auto;
+}
+
+.pele-carousel .slick-prev, .pele-carousel .slick-next {
+    height: 30px !important;
+    width: 30px;
+    align-self: center;
+    border: none;
+    background: #fff;
+}
+
+.pele-carousel .slick-prev{
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+}
+
+.pele-carousel .slick-next{
+    position: absolute;
+    right: 0px;
+}
+
+.pele-carousel-item{
+    width: 100%;
+}
+
+.pele-carousel-item img{
+    width: 100%;
+}
+
+/*comentarios section*/
+
+
+.comentarios{
+   
+    padding: 50px 20px;
+}
+
+.comentarios .title{
+    text-align: center;
+    color: var(--color2);
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comentarios .subtitle{
+    color: #000;
+    font-size: 22px;
+    max-width: 750px;
+    text-align: center;
+    margin: 20px auto 50px;
+}
+
+.comentarios .comentario-carousel{
+    display: flex;
+    justify-content: center;
+
+}
+
+.comentario-carousel img{
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    
+}
+
+
 /*comentarios section*/
 
 
@@ -428,7 +431,9 @@ header a{
 }
 
 .clinica-carousel-item img{
-    width: 50%;
+    width:600px;
+    height: 800px;
+    object-fit: cover;
 }
 
 /*perguntas section*/
@@ -443,6 +448,7 @@ header a{
     font-size: 2rem;
     color: #fff;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .peguntas-list{
@@ -473,6 +479,10 @@ header a{
   
   .active, .accordion:hover {
     background-color:var(--bg2); 
+    
+  }
+
+  .active{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -491,6 +501,69 @@ header a{
     margin-bottom: 10px;
   }
 
+
+/*desconto section*/
+
+/*cta section*/
+
+  .desconto{
+    padding: 50px 30px;
+  }
+
+  .desconto .title{
+    font-size: 3.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color2);
+    
+
+  }
+
+  .desconto .subtitle{
+    margin: 20px auto 50px;
+    font-size: 22px ;
+    text-align: center;
+    max-width: 668px;
+    
+  }
+
+  .desconto .button{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+   
+  .desconto .button{
+    padding: 20px;
+  }
+
+
+.card-desconto{
+    border: 1px solid red;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url('./img/card-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 400px;
+    padding: 50px;
+}
+
+.card-desconto h3{
+    font-size: 1.5rem;
+}
+
+.card-desconto h4{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 222px;
+    width: 100%;
+    
+}
+
+.card-desconto h4 span{
+    font-size: 1rem;
+}
   /*cta section*/
 
   .cta{
@@ -507,8 +580,10 @@ header a{
   }
 
   .cta .subtitle{
-    margin: 20px 0px 50px;
+    margin: 20px auto 50px;
     font-size: 22px ;
+    text-align: center;
+    max-width: 668px;
     
   }
 
@@ -516,7 +591,10 @@ header a{
     max-width: 500px;
     margin: 0 auto;
   }
-
+   
+  .cta .button{
+    padding: 20px;
+  }
 
 
   @media screen and (max-width:500px) {
