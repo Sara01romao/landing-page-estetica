@@ -455,8 +455,14 @@ header a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 
 }
+.accordion-container{
+    width: 100%;
+    overflow: hidden;
+}
+
 
 .accordion {
   background-color: var(--bg2);
@@ -469,6 +475,8 @@ header a{
   outline: none;
   font-size: 18px;
   transition: 0.4s;
+  position: relative;
+  z-index: 1;
 }
 
 .active, .accordion:hover {
@@ -494,12 +502,34 @@ header a{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   line-height: 1.5;
-  
+  padding: 20px;
+  display: none;
+  transition: 0.4s;
  
 }
 
-.active .panel{
-    padding: 20px;
+
+
+.panel.open{
+    height: auto;
+    display: block;
+    animation: up 0.8s ease;
+}
+
+@keyframes up {
+    from {
+        
+
+       
+        transform: translateY(-57px);
+      }
+    
+      to {
+       
+        transition: initial;
+        top: 0px;
+      }
+    
 }
 
 
