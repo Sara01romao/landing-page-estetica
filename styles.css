@@ -533,6 +533,13 @@ header a{
 }
 
 
+
+
+
+
+
+
+
 /*desconto section*/
 
 /*cta section*/
@@ -611,6 +618,7 @@ header a{
 
   .cta{
     padding: 50px 30px;
+    background-color: var(--color1);
   }
 
   .cta .title{
@@ -618,7 +626,7 @@ header a{
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    color: var(--color2);
+    color: #fff;
 
   }
 
@@ -627,7 +635,7 @@ header a{
     font-size: 22px ;
     text-align: center;
     max-width: 668px;
-    
+    color: #af2b2f;
   }
 
   .cta .button{
@@ -639,6 +647,18 @@ header a{
     padding: 20px;
   }
 
+
+  /*rodape*/
+
+  footer{
+    background: #000;
+    padding: 30px 20px;
+  }
+
+  footer p{
+    color: #fff;
+    text-align: center;
+  }
 
   @media screen and (max-width:500px) {
     .header-container{
