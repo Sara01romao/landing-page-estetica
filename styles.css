@@ -135,8 +135,6 @@ header a{
 }
 
 .home-info div{
-    
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,15 +143,31 @@ header a{
 }
 
 .home-info div p{
-    font-size: 22px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 1px 1px #5c5c5c;
+    line-height: 1.5;
     
 
+}
+
+@media screen and (max-width:500px) {
+   
+.home-info div p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 1px 1px #5c5c5c;
+    line-height: 1.5;
+    
+
+}
 }
 
 .home-info .button{
     max-width: 450px;
     align-self: flex-start;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -458,83 +472,52 @@ header a{
     gap: 10px;
 
 }
-.accordion-container{
-    width: 100%;
-    overflow: hidden;
-}
+
+
+
 
 
 .accordion {
-  background-color: var(--bg2);
-  color: #000000;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  transition: 0.4s;
-  position: relative;
-  z-index: 1;
+    background-color: var(--bg2);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: var(--bg2);
+    background-color: var(--bg2);
 }
 
 .accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+    content: "\2212";
 }
 
 .panel {
-  
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  line-height: 1.5;
-  padding: 20px;
-  display: none;
-  transition: 0.4s;
- 
-}
-
-
-
-.panel.open{
-    height: auto;
-    display: block;
-    animation: up 0.8s ease;
-}
-
-@keyframes up {
-    from {
-        
-
-       
-        transform: translateY(-57px);
-      }
     
-      to {
-       
-        transition: initial;
-        top: 0px;
-      }
-    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-
-
-
+.panel p{
+    font-size: 16px;
+    line-height: 1.3;
+}
 
 
 
@@ -557,6 +540,14 @@ header a{
     
 
   }
+
+@media screen and (max-width:500px) {
+    .desconto .title{
+        font-size: 3rem;
+    }
+    
+}
+
 
   .desconto .subtitle{
     margin: 20px auto 50px;
@@ -584,6 +575,7 @@ header a{
     background-image: url('./img/card-img.png');
     background-repeat: no-repeat;
     background-position: right;
+    background-position-y: bottom;
     padding: 30px 50px 30px 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -671,7 +663,7 @@ header a{
 
     .home-info{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        
     }
 
     .preco-container{
