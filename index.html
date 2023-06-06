@@ -192,7 +192,6 @@
       <div class="container">
          <h2 class="title">PERGUNTAS FREQUENTES</h2>
 
-
          <div class="peguntas-list">
             
                 <button class="accordion">A partir de qual idade pode fazer limpeza de pele? </button>
@@ -341,69 +340,54 @@
 
     var acc = document.getElementsByClassName("accordion");
 
-var panelItens = document.querySelectorAll(".panel");
-var accItens = document.querySelectorAll(".accordion");
-var i;
+    var panelItens = document.querySelectorAll(".panel");
+    var accItens = document.querySelectorAll(".accordion");
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    panelItens.forEach(element => {
-        element.style.maxHeight = null;  
-        //this.classList.remove('active')
-    });
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            
 
-    accItens.forEach(element => {
-        element.classList.remove('active')
-        
-    });
+            panelItens.forEach(element => {
+                element.style.maxHeight = null;  
+                
+            });
 
-    
-    
-    var panel = this.nextElementSibling;
+            
+            
 
-        // if (panel.style.maxHeight) {
-        // panel.style.maxHeight = null;
-        // this.classList.remove("active");
-        // } else {
-        // panel.style.maxHeight = (panel.scrollHeight + 30) + "px";
-        // this.classList.add("active");
+            var panel = this.nextElementSibling;
 
-        // } 
+            if(!this.classList.contains('active')){
+                
+                panel.style.maxHeight = (panel.scrollHeight + 30) + "px";
+                
+                accItens.forEach(element => {
+                    element.classList.remove('active')
+                
+                });
 
-    // if(this.classList.contains('active')){
-    //     panel.style.maxHeight = null;
-    //     console.log('verdadeiro active')
-
-    //     this.classList.toggle("active");
-
-        
-    // }
-
-    if(!this.classList.contains('active')){
-        
-        panel.style.maxHeight = (panel.scrollHeight + 30) + "px";
-         
-
-        console.log('false active')
-
-        this.classList.add("active");
+                this.classList.toggle("active");
 
 
-    } else {
-        this.classList.remove("active");
-        panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = null;
 
-        console.log('remove')
+                accItens.forEach(element => {
+                    element.classList.remove('active')
+                
+                });
+
+                
+            }
+            
+
+
+            
+
+
+        });
     }
-    
-
-
-    
-
-
-  });
-}
 
 
  
